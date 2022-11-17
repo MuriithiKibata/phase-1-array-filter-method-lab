@@ -1,6 +1,6 @@
 // Code your solution here
 function findMatching (drivers, attribute) {
- let filtered = drivers.filter((item)=> item.toLowerCase() === attribute.toLowerCase())
+ let filtered = drivers.filter((item)=> item.toLowerCase().startsWith(attribute.toLowerCase()))
  return filtered
 }
 
